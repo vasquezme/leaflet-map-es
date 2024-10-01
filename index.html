@@ -27,11 +27,11 @@ body { margin:0; padding:0; }
 
 /* Set up the initial map center and zoom level */
 var map = L.map('map', {
-center: [43.64, -79.38], // EDIT coordinates to re-center map 43.64159021479595, -79.38793608540173
+center: [13.77, -88.99], // EDIT coordinates to re-center map 43.64159021479595, -79.38793608540173
 zoom: 12,  // EDIT from 1 (zoomed out) to 18 (zoomed in)
 scrollWheelZoom: false
 });
-
+    
 /* display basemap tiles -- see others at https://leaflet-extras.github.io/leaflet-providers/preview/ */
 L.tileLayer(
 'https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}', { // https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}
@@ -39,13 +39,14 @@ attribution: 'Tiles &copy; Esri &mdash; Source: Esri, i-cubed, USDA, USGS, AEX, 
 }).addTo(map);
 
 /* Display a point marker with pop-up text */
-L.marker([43.64, -79.38]).addTo(map) // EDIT marker coordinates
-.bindPopup("Toronto"); // EDIT pop-up text message
-    L.marker([43.6683, -79.3945]).addTo(map)
-.bindPopup("Royal Ontario Museum"); //43.6683792380287, -79.39454964092549
-L.marker([43.665, -79.303]).addTo(map)
+L.marker([13.85, -89.62]).addTo(map) // EDIT marker coordinates
+.bindPopup("Santa Ana"); // EDIT pop-up text message
+    L.marker([13.73, -89.2945]).addTo(map)
+.bindPopup("San Salvador"); //43.6683792380287, -79.39454964092549
+L.marker([13.59, -88.85]).addTo(map)
+    540496034879, -88.47608011835881
 .bindPopup("Toronto Beach"); -79.30
-L.marker([43.631, -79.472]).addTo(map)
+L.marker([13.422, -88.47]).addTo(map)
 .bindPopup("Toronto Harbour"); //43.631606802378116, -79.47277170003382
 
 
