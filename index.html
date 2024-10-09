@@ -27,7 +27,7 @@ body { margin:0; padding:0; }
 
 /* Set up the initial map center and zoom level */
 var map = L.map('map', {
-center: [13.71, -89.24], // EDIT coordinates to re-center map 43.64159021479595, -79.38793608540173
+center: [13.71, -89.24], // recentered to SLV
 zoom: 10,  // EDIT from 1 (zoomed out) to 18 (zoomed in)
 scrollWheelZoom: false
 });
@@ -39,16 +39,27 @@ attribution: 'Tiles &copy; Esri &mdash; Source: Esri, i-cubed, USDA, USGS, AEX, 
 }).addTo(map);
 
 /* Display a point marker with pop-up text */
-L.marker([13.85, -89.62]).addTo(map) // EDIT marker coordinates
-.bindPopup("Santa Ana"); // EDIT pop-up text message
-    L.marker([13.73, -89.2945]).addTo(map)
-.bindPopup("San Salvador"); //43.6683792380287, -79.39454964092549
+L.marker([13.9159990944554,-89.7176540274245]).addTo(map) // EDIT marker coordinates
+.bindPopup("Apaneca Range"); // EDIT pop-up text message
+L.marker([13.73, -89.2945]).addTo(map)
+.bindPopup("San Salvador"); 
 L.marker([13.59, -88.85]).addTo(map)
-    540496034879, -88.47608011835881
 .bindPopup("San Vicente"); -79.30
 L.marker([13.422, -88.47]).addTo(map)
-.bindPopup("San Miguel"); //43.631606802378116, -79.47277170003382
+.bindPopup("San Miguel");
+L.marker([13.422, -88.47]).addTo(map)
+.bindPopup("San Miguel");
 
+L.marker([13.422, -88.47]).addTo(map)
+.bindPopup("San Miguel");
+L.marker([13.422, -88.47]).addTo(map)
+.bindPopup("San Miguel");
+L.marker([13.59, -88.85]).addTo(map)
+.bindPopup("San Vicente"); -79.30
+L.marker([13.422, -88.47]).addTo(map)
+.bindPopup("San Miguel");
+L.marker([13.422, -88.47]).addTo(map)
+.bindPopup("San Miguel");
 
 
 </script>
